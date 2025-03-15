@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Smarter Prompt",
+  "version": "1.0.0",
+  "description": "Enhance your prompts for AI tools based on different needs",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "clipboardWrite"
+  ]
+}
