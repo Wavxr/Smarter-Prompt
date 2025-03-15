@@ -1,12 +1,66 @@
-# React + Vite
+Here's the refined README file:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# Smarter Prompt
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A Chrome extension that enhances your prompts for AI tools based on different needs.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Transform basic prompts into more effective ones.
+- Multiple enhancement modes:
+  - **Informational:** Clear, factual responses.
+  - **Creative:** Storytelling and idea generation.
+  - **Concise:** Short and direct answers.
+  - **Persuasive:** Convincing arguments.
+- Copy enhanced prompts to clipboard with one click.
+
+## Installation
+
+### Development Setup
+
+1. **Clone this repository:**
+   ```sh
+   git clone https://github.com/Wavxr/Smarter-Prompt.git
+   cd smarter-prompt
+   ```
+
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+3. **Create a `.env` file** based on `.env.example` and add your Gemini API key.
+
+4. **Build the extension:**
+   ```sh
+   npm run build
+   ```
+
+5. **Load the extension in Chrome:**
+   - Open Chrome and navigate to `chrome://extensions/`.
+   - Enable **Developer mode**.
+   - Click **"Load unpacked"** and select the `dist` folder.
+
+## Development
+
+- **Run development server:**  
+  ```sh
+  npm run dev
+  ```
+- **Build extension:**  
+  ```sh
+  npm run build
+  ```
+- **Build and prepare extension (Windows):**  
+  ```sh
+  build-extension.bat
+  ```
+
+## Technologies
+
+- **React**
+- **Vite**
+- **Tailwind CSS 4.0**
+- **Google Gemini API**
