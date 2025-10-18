@@ -23,8 +23,7 @@ function App() {
     
     try {
       const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY)
-      // Update the model name to 'gemini-1.5-pro' or another available model
-      const model = genAI.getGenerativeModel({ model: 'gemini-1.5-pro' })
+      const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash-lite' })
 
       const modeInstructions = {
         informational: 'Optimize this prompt for clear, factual responses with accurate information.',
